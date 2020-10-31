@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SongCollectionViewCell" customModule="MusicPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="132" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="132" height="126"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1bE-ZI-WjD">
+                        <rect key="frame" x="0.0" y="0.0" width="132" height="126"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="1bE-ZI-WjD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aHM-BO-cOY"/>
+                <constraint firstAttribute="bottom" secondItem="1bE-ZI-WjD" secondAttribute="bottom" id="hjr-7z-OuX"/>
+                <constraint firstAttribute="trailing" secondItem="1bE-ZI-WjD" secondAttribute="trailing" id="j57-sf-1cc"/>
+                <constraint firstItem="1bE-ZI-WjD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nfN-RG-b6L"/>
+            </constraints>
+            <size key="customSize" width="132" height="126"/>
+            <connections>
+                <outlet property="songImage" destination="1bE-ZI-WjD" id="e8A-YT-oao"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="83.035714285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>
